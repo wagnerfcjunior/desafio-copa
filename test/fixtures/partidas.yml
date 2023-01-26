@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time1: MyString
+  equipe: one
+  time2: MyString
+  equipe: one
+  data_partida: 2023-01-26
+  vencedor: MyString
+  equipe: one
+
+two:
+  time1: MyString
+  equipe: two
+  time2: MyString
+  equipe: two
+  data_partida: 2023-01-26
+  vencedor: MyString
+  equipe: two

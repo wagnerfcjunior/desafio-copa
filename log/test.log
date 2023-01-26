@@ -1,0 +1,61 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "equipes"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "equipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "total_jogadores" integer, "total_defesa" integer, "total_ataque" integer, "total_meio" integer, "imagem" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230126004854)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2023-01-26 00:54:38.255633"], ["updated_at", "2023-01-26 00:54:38.255633"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c5d588de4728270a26148dbdc2a35e3d3db58a49"], ["created_at", "2023-01-26 00:54:38.261489"], ["updated_at", "2023-01-26 00:54:38.261489"]]
+  [1m[36mTRANSACTION (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "equipes"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "equipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "total_jogadores" integer, "total_defesa" integer, "total_ataque" integer, "total_meio" integer, "imagem" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "partidas"[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "partidas" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "time1_id" integer NOT NULL, "time2_id" integer NOT NULL, "data_partida" date, "vencedor_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_time1_id" ON "partidas" ("time1_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_time2_id" ON "partidas" ("time2_id")[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_vencedor_id" ON "partidas" ("vencedor_id")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apartidas" ("id" integer NOT NULL PRIMARY KEY, "time1_id" integer NOT NULL, "time2_id" integer NOT NULL, "data_partida" date DEFAULT NULL, "vencedor_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apartidas_on_vencedor_id" ON "apartidas" ("vencedor_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apartidas_on_time2_id" ON "apartidas" ("time2_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apartidas_on_time1_id" ON "apartidas" ("time1_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apartidas" ("id","time1_id","time2_id","data_partida","vencedor_id","created_at","updated_at")
+                     SELECT "id","time1_id","time2_id","data_partida","vencedor_id","created_at","updated_at" FROM "partidas"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "partidas"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "partidas" ("id" integer NOT NULL PRIMARY KEY, "time1_id" integer NOT NULL, "time2_id" integer NOT NULL, "data_partida" date DEFAULT NULL, "vencedor_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_1e457e7352"
+FOREIGN KEY ("time1_id")
+  REFERENCES "time1s" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_time1_id" ON "partidas" ("time1_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_time2_id" ON "partidas" ("time2_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_partidas_on_vencedor_id" ON "partidas" ("vencedor_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "partidas" ("id","time1_id","time2_id","data_partida","vencedor_id","created_at","updated_at")
+                     SELECT "id","time1_id","time2_id","data_partida","vencedor_id","created_at","updated_at" FROM "apartidas"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
